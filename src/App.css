@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "GothamBold";
+  src: url("../fonts/GothamBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../fonts/GothamMedium.ttf") format("truetype");
+}
+
+* {
+  font-family: "GothamBold";
+}
+
+.search--centerBlock {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Center vertically on the screen */
+  text-align: center;
+}
+
+.search--submitBtn {
+  background-color: #a9e5ac;
+  padding: 5px 9px;
+}
+
+.search--header {
+  font-size: 20px;
+  text-align: center;
+}
+
+.search--form {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.search--inputField {
+  font-family: "GothamMedium";
+}
+
+input.has-value {
+  font-family: "GothamMedium";
+}
+
+input::placeholder {
+  font-family: "GothamMedium";
+}
+
+.album--background {
+  background: #ffa69e;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.album--h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.album--grid {
+  text-align: center;
+}
+
+.album--card {
+  background-color: black;
+}
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.album--grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.album--card {
+  max-height: 300px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.album--card:hover {
+  transform: translateY(-5px);
+}
+
+.album--image {
+  height: 75%;
+}
+
+.album--title {
+  font-size: 16px; /* Font size for the album title */
+  margin-top: 10px; /* Spacing between image and title */
+}
+
+@media (max-width: 768px) {
+  .album--grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+  }
+}
